@@ -1,8 +1,11 @@
 *{
   box-sizing: border-box;
 }
+html {
+  position: relative;
+}
 body {
-  margin: 0;
+  margin: 0 0 75px;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -71,7 +74,7 @@ label {
   font-weight: 700;
 }
 input[type="text"], input[type="email"], input[type="number"], select {
-  width: 50%;
+  width: 60%;
   height: 30px;
 }
 input[type="text"], input[type="email"], input[type="number"], select, textarea, #submit {
@@ -122,17 +125,17 @@ textarea {
   color: #fff;
   border: 0;
   width: 100px;
-  height: 30px;
+  height: 40px;
   cursor: pointer;
+  font-size: 15px;
 }
 footer {
   background-color: #222;
   margin-top: 20px;
   width: 100%;
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
   display: inherit;
   justify-content: center;
   color: #fff;
