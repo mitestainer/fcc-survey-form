@@ -29,7 +29,7 @@ body {
 }
 .form {
   display: grid;
-  grid-template-rows: repeat(4, 65px) repeat(3, 110px) 1fr 80px 60px;
+  grid-template-rows: repeat(4, 75px) repeat(3, 120px) 1fr repeat(2, 80px);
   grid-template-columns: 1fr auto 1fr;
   justify-content: center;
 }
@@ -76,7 +76,7 @@ body {
   font-weight: 700;
 }
 p {
-  margin: 0;
+  margin: 10px;
 }
 .fill {
   display: inherit;
@@ -134,6 +134,9 @@ textarea {
 .agree {
   align-self: flex-start;
   font-weight: 400;
+}
+.agree p {
+  margin: 0;
 }
 #submit {
   background-color: #222;
@@ -198,7 +201,7 @@ footer {
     font-size: 15px;
   }
   .form {
-    grid-template-rows: repeat(4, 65px) repeat(2, 300px) 200px 1fr 120px 60px;
+    grid-template-rows: repeat(4, 75px) repeat(2, 350px) 220px 1fr 150px 80px;
   }
   .inner {
     flex-direction: column;
@@ -207,6 +210,9 @@ footer {
   .rate {
     flex-direction: row;
     font-size: 14px;
+  }
+  .rate i {
+    font-size: 15px;
   }
   .agree {
     font-size: 14px;
