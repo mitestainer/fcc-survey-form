@@ -18,133 +18,156 @@
       <div class="form">
         <form id="survey-form" action="index.html" method="post">
           <div id="area1" class="holder">
-            <label id="name-label" for="name">Name:</label>
-            <input id="name" type="text" placeholder="Please enter your name" required />
+            <label id="name-label" for="name" class="fill">Name:
+              <input id="name" type="text" placeholder="Please enter your name" required />
+            </label>
           </div>
           <div id="area2" class="holder">
-            <label id="email-label" for="email">Email:</label>
-            <input id="email" type="email" placeholder="Please enter your e-mail address" required />
+            <label id="email-label" for="email" class="fill">Email:
+              <input id="email" type="email" placeholder="Please enter your e-mail address" required /></label>
+            </div>
+            <div id="area3" class="holder">
+              <label id="number-label" for="number" class="fill">Age:
+                <input id="number" type="number" placeholder="Please enter your age" min="10" max="99" /></label>
+              </div>
+              <div id="area4" class="holder">
+                <label for="dropdown" class="fill">Where do you live?:
+                  <select id="dropdown" required>
+                    <option value="" disabled selected>Choose an option</option>
+                    <option value="AG">Antigua and Barbuda</option>
+                    <option value="BS">Bahamas</option>
+                    <option value="BB">Barbados</option>
+                    <option value="BZ">Belize</option>
+                    <option value="CA">Canada</option>
+                    <option value="CR">Costa Rica</option>
+                    <option value="CU">Cuba</option>
+                    <option value="DM">Dominica</option>
+                    <option value="DO">Dominican Republic</option>
+                    <option value="SV">El Salvador</option>
+                    <option value="GD">Grenada</option>
+                    <option value="GT">Guatemala</option>
+                    <option value="HT">Haiti</option>
+                    <option value="HN">Honduras</option>
+                    <option value="JM">Jamaica</option>
+                    <option value="MX">Mexico</option>
+                    <option value="NI">Nicaragua</option>
+                    <option value="PA">Panama</option>
+                    <option value="KN">Saint Kitts and Nevis</option>
+                    <option value="LC">Saint Lucia</option>
+                    <option value="VC">Saint Vincent and the Grenadines</option>
+                    <option value="TT">Trinidad and Tobago</option>
+                    <option value="US">USA</option>
+                    <option value="other">My country is not in the list</option>
+                  </select>
+                </label>
+              </div>
+              <div id="area5" class="holder">
+                <p>How would you rate your experience with our product so far?:</p>
+                <div class="inner">
+                  <label class="rate">
+                    <input type="radio" name="rating" value="1" required />
+                    <span>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </span>
+                  </label>
+                  <label class="rate">
+                    <input type="radio" name="rating" value="2" />
+                    <span>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </span>
+                  </label>
+                  <label class="rate">
+                    <input type="radio" name="rating" value="3" />
+                    <span>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </span>
+                  </label>
+                  <label class="rate">
+                    <input type="radio" name="rating" value="4" />
+                    <span>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </span>
+                  </label>
+                  <label class="rate">
+                    <input type="radio" name="rating" value="5" />
+                    <span>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div id="area6" class="holder">
+                <p>In your opinion, what are the best features of our product?:</p>
+                <div class="inner">
+                  <label class="rate">
+                    <input type="checkbox" name="features" value="design" /><span>Design</span>
+                  </label>
+                  <label class="rate">
+                    <input type="checkbox" name="features" value="content" /><span>Content</span>
+                  </label>
+                  <label class="rate">
+                    <input type="checkbox" name="features" value="pricing" /><span>Pricing</span>
+                  </label>
+                  <label class="rate">
+                    <input type="checkbox" name="features" value="support" /><span>Support</span>
+                  </label>
+                  <label class="rate">
+                    <input type="checkbox" name="features" value="usability" /><span>Usability</span>
+                  </label>
+                </div>
+              </div>
+              <div id="area7" class="holder">
+                <p>Have you ever needed to call the support?:</p>
+                <div class="inner">
+                  <label class="rate">
+                    <input type="radio" name="support" value="once" /><span>Once</span>
+                  </label>
+                  <label class="rate">
+                    <input type="radio" name="support" value="more" /><span>More than once</span>
+                  </label>
+                  <label class="rate">
+                    <input type="radio" name="support" value="no" /><span>Never</span>
+                  </label>
+                </div>
+              </div>
+              <div id="area8" class="holder">
+                <label class="fill">Do you have any further comments?:
+                  <textarea name="name" rows="8" placeholder="Enter your comments here"></textarea></label>
+                </div>
+                <div id="area9" class="holder">
+                  <label class="agree"><p><input type="checkbox" name="agree" value="email" />I agree to receive news and offers in my e-mail.</p></label>
+                  <label class="agree"><p><input type="checkbox" name="agree" value="sms" />I agree to receive news and offers via SMS.</p></label>
+                  <label class="agree"><p><input type="checkbox" name="agree" value="terms" required />By submitting this form, I agree with the <a href="#">Terms and Conditions</a>.</p></label>
+                </div>
+                <div id="area10" class="holder">
+                  <input id="submit" type="submit" value="Submit" />
+                </div>
+              </form>
+            </div>
           </div>
-          <div id="area3" class="holder">
-            <label id="number-label" for="number">Age:</label>
-            <input id="number" type="number" placeholder="Please enter your age" min="10" max="99" />
-          </div>
-          <div id="area4" class="holder">
-            <label for="dropdown">Where do you live?:</label>
-            <select id="dropdown" required>
-              <option value="" disabled selected>Choose an option</option>
-              <option value="AG">Antigua and Barbuda</option>
-              <option value="BS">Bahamas</option>
-              <option value="BB">Barbados</option>
-              <option value="BZ">Belize</option>
-              <option value="CA">Canada</option>
-              <option value="CR">Costa Rica</option>
-              <option value="CU">Cuba</option>
-              <option value="DM">Dominica</option>
-              <option value="DO">Dominican Republic</option>
-              <option value="SV">El Salvador</option>
-              <option value="GD">Grenada</option>
-              <option value="GT">Guatemala</option>
-              <option value="HT">Haiti</option>
-              <option value="HN">Honduras</option>
-              <option value="JM">Jamaica</option>
-              <option value="MX">Mexico</option>
-              <option value="NI">Nicaragua</option>
-              <option value="PA">Panama</option>
-              <option value="KN">Saint Kitts and Nevis</option>
-              <option value="LC">Saint Lucia</option>
-              <option value="VC">Saint Vincent and the Grenadines</option>
-              <option value="TT">Trinidad and Tobago</option>
-              <option value="US">USA</option>
-              <option value="other">My country is not in the list</option>
-            </select>
-          </div>
-          <div id="area5" class="holder rate">
-            <label for="rating">How would you rate your experience with our product so far?:</label>
-            <ul>
-              <li>
-                <input type="radio" name="rating" value="1" required />
-                <span>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                </span>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="2" />
-                <span>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                </span>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="3" />
-                <span>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                </span>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="4" />
-                <span>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                </span>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="5" />
-                <span>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </span>
-              </li>
-            </ul>
-          </div>
-          <div id="area6" class="holder">
-            <label for="features">In your opinion, what are the best features of our product?:</label>
-            <ul>
-              <li><input type="checkbox" name="features" value="design" /><span>Design</span></li>
-              <li><input type="checkbox" name="features" value="content" /><span>Content</span></li>
-              <li><input type="checkbox" name="features" value="pricing" /><span>Pricing</span></li>
-              <li><input type="checkbox" name="features" value="support" /><span>Support</span></li>
-              <li><input type="checkbox" name="features" value="usability" /><span>Usability</span></li>
-            </ul>
-          </div>
-          <div id="area7" class="holder">
-            <label for="support">Have you ever needed to call the support?:</label>
-            <ul>
-              <li><input type="radio" name="support" value="once" /><span>Once</span></li>
-              <li><input type="radio" name="support" value="more" /><span>More than once</span></li>
-              <li><input type="radio" name="support" value="no" /><span>Never</span></li>
-            </ul>
-          </div>
-          <div id="area8" class="holder">
-            <label>Do you have any further comments?:</label>
-            <textarea name="name" rows="8" placeholder="Enter your comments here"></textarea>
-          </div>
-          <div id="area9" class="holder">
-            <input id="submit" type="submit" value="Submit" />
-          </div>
-        </form>
-      </div>
-    </div>
-    <footer>
-      <p>2018 &copy; Some company, somewhere.</p>
-    </footer>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  </body>
-  </html>
+          <footer>
+            <p>2018 &copy; Some company, somewhere.</p>
+          </footer>
+          <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        </body>
+        </html>
